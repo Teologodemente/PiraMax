@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0c29">
+  <title>PiraMax — Pirámide Numérica</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="fx"></canvas>
+
+  <header class="top">
+    <div class="logo" aria-label="PiraMax">
+      <span class="l1">P</span><span class="l2">i</span><span class="l3">r</span><span class="l4">a</span><span class="l5">M</span><span class="l6">a</span><span class="l7">x</span>
+    </div>
+
+    <div class="hud">
+      <div class="stat"><small>Nivel</small><span id="level">1</span></div>
+      <div class="stat"><small>Puntos</small><span id="score">0</span></div>
+      <div class="stat"><small>Récord</small><span id="best">0</span></div>
+      <div class="stat"><small>Pistas</small><span id="hints">2</span></div>
+    </div>
+
+    <div class="controls">
+      <button id="newBtn" class="btn ghost" title="Nueva pirámide (mismo nivel)">🔄</button>
+      <button id="soundBtn" class="btn ghost" title="Activar / silenciar sonido">🔊</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="badge" id="opBadge">MODO SUMA ＋</div>
+    <p class="rule" id="rule"></p>
+
+    <div id="pyramid" class="pyramid" aria-live="polite"></div>
+
+    <p id="msg" class="msg"></p>
+
+    <div id="helper" class="helper"></div>
+
+    <div class="actions">
+      <button id="hintBtn" class="btn">💡 Pista</button>
+      <button id="checkBtn" class="btn primary">✅ Comprobar</button>
+    </div>
+  </main>
+
+  <footer>PiraMax · HTML + CSS + JS · Escribe las casillas «?» y presiona Comprobar (o Enter)</footer>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
